@@ -1,0 +1,311 @@
+body{
+    margin: auto;
+}
+
+h1, h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin-bottom: 3rem;
+    color: rgb(253, 187, 63);
+}
+
+hr{
+    color: rgb(235, 198, 164);
+    width: 60%;
+    margin: 2rem auto;
+}
+
+
+/* Barra navegación */
+#barra-navegacion {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: .4rem;
+    background-color: #313131;
+}
+
+.nombre-empresa{
+    width: 30%;
+}
+
+.nombre-empresa a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: larger;
+    color: rgb(253, 187, 63);
+    margin-left: 2rem;
+    vertical-align: center;
+
+}
+
+.enlaces{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.enlaces a{
+    text-decoration: none;
+    vertical-align: center;
+    color:#fff;
+    margin: 0 1.5rem;
+}
+
+.enlaces a:hover{
+    color:rgb(253, 187, 63);
+    font-weight: bold;
+}
+
+/* Pie de página */
+footer{
+    background-color: rgb(49, 49, 49);
+    color: #fff;
+    height: 5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Página principal  */
+.imagen-portada{
+    height: 32rem;
+    width: 100%;
+    margin: auto;
+}
+
+.titulo-portada{
+    text-transform: uppercase;
+    color: rgb(122, 121, 121);
+    bottom:5px;
+    right:10px;
+}
+
+.bloque2{
+    margin: 3rem auto;
+}
+
+.que-ofrecemos{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.que-ofrecemos p{
+    color:rgb(122, 122, 122);
+    font-style: italic;
+}
+
+.que-ofrecemos img{
+    width: 20rem;
+    height: 14rem;
+    border-radius: .2rem;
+}
+
+/* Bloque 3 */
+.bloque3{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto 4rem auto
+}
+
+.video{
+    width: 65%;
+	height: 23rem;
+	margin: auto;   
+}
+
+/* Bloque 4 */
+.bloque4{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+}
+
+.bloque4 p{
+    margin: auto;
+}
+
+.bloque4 img {
+	width: 65%;
+	height: 23rem;
+	margin: auto;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 15rem 25rem;
+    grid-template-rows: 5rem;
+    margin: 3rem auto 2rem auto;
+    text-align: center;
+    grid-gap: 1rem;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 25rem 15rem;
+    grid-template-rows: 5rem;
+    margin: 1rem auto 3rem auto;
+    text-align: center;
+    grid-gap: 1rem;
+}
+
+.front, .frontend, .back, .backend{
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.front{
+    background-color: rgb(205, 92, 92);
+    box-shadow: 1px 2px 4px rgb(205, 92, 92);
+}
+
+.frontend{
+    background-color:rgb(211, 196, 64);
+    box-shadow: 1px 2px 4px rgb(211, 196, 64);
+}
+
+.back{
+    background-color: rgb(105, 205, 92);
+    box-shadow: 1px 2px 4px rgb(105, 205, 92);
+}
+
+.backend{
+    background-color:rgb(63, 91, 253);
+    box-shadow: 1px 2px 4px rgb(63, 91, 253);
+}
+
+/* Formulario de contacto */
+#formulario{
+    margin: 4rem 0 3rem 0;
+    text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: auto;
+	border: 1px solid #d0d06d;
+	padding: 2rem;
+	border-radius: 4px;
+	box-shadow: 2px 3px 3px bisque;
+}
+
+input{
+    margin: .4rem 0;
+    border: 1px solid rgb(129, 129, 129);
+    border-radius: 2px;
+    padding: .3rem;
+}
+
+textarea{
+    margin: .4rem 0;
+    resize: none;
+}
+
+input:focus{
+    border: 1px solid #000;
+    border-radius: 2px;
+    clear: both;
+}
+
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input::placeholder, textarea::placeholder{
+    padding: .3rem;
+    color: rgb(158, 78, 7);
+}
+
+.boton-enviar{
+    margin: 1.5rem auto;
+    width: 8rem;
+    height: 2.5rem;
+    border: 1px solid rgb(158, 78, 7);
+    background-color: rgb(158, 78, 7);
+    color: #fff;
+    border-radius: 3px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    #barra-navegacion{
+        display: flex;
+        flex-direction: column;
+    }
+    .nombre-empresa{
+        width: 100%;
+        text-align: center;
+    }
+    .enlaces{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .imagen-portada{
+        height: 25rem;
+        width: 100%;
+    }
+    .que-ofrecemos{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: auto;
+    }
+    .ofrecemos{
+        margin: 1rem;
+    }
+    .video{
+        width: 90%;
+	    height: 16rem;
+        margin: auto;
+    }
+    .bloque4 p{
+        margin: 0 1rem;
+        text-align: center;
+    }
+    .grid1 {
+        display: grid;
+        grid-template-columns: 20rem;
+        grid-template-rows: 5rem 5rem;
+        margin: 3rem auto 1rem auto;
+    }
+    .grid2 {
+        display: grid;
+        grid-template-columns: 20rem;
+        grid-template-rows: 5rem 5rem;
+        margin: 0 auto 2rem auto;
+    }
+    .back p{
+        display: none;
+    }
+    .back::before{
+        content: "Back-end";
+    }
+    .backend p{
+        display: none;
+    }
+    .backend::before{
+        content: "PHP, node.js, Python, Java";
+    }
+    .bloque4 img {
+        width: 66%;
+        height: 14rem;
+        margin: 3rem auto 1.5rem auto;
+    }
+    h1{
+        width: 50%;
+        margin: auto;
+    }
+    form{
+        margin-top: 3.1rem;
+    }
+}

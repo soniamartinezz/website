@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="Sonia Martínez">
+    <meta name="description" content="mi website">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contacto - Desarrollo Web</title>
+</head>
+<body>
+
+    <!-- Barra de barra navegación -->
+    <head>
+        <nav id="barra-navegacion">
+            <p class="nombre-empresa">
+                <a href="index.html">Desarrollo Web</a>
+            </p>
+            <p class="enlaces">
+                <a href="index.html">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="formulario.html">Contacto</a>
+            </p>
+        </nav>
+    </head>
+
+    <!-- Contenido principal -->
+    <main>
+        <div id="formulario">
+
+            <h1>Formulario de contacto</h1>
+                
+            <form action="/contactar" method="post">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+                <input type="text" name="email" id="email" placeholder="Correo electrónico">
+                <input type="number" name="telefono" id="telefono" placeholder="Teléfono o móvil" required>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="4" placeholder="Escribe tu consulta" required></textarea>
+                <button type="button" class="boton-enviar">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Teléfono: <strong>635337164</strong></p>
+        <p>Ubicación: <strong>Calle Gran Vía 54, Madrid (Madrid)</strong></p>
+    </footer>
+    
+</body>
+</html>
